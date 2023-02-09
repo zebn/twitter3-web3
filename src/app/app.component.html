@@ -1,14 +1,22 @@
 <div class="grid grid-cols-3 gap-4">
+  <div>
+    <a routerLink="/main-feed">Home</a><br>
+    <a routerLink="/profile">Profile</a>
+  </div>
 
-  <div class="border-r">left menu</div>
-
+ 
   <div class="border-r border-l">
     forms and stuff
-    <div class="border-t pb-8">
-<tweet [content]="item" *ngFor="let item of tweets">
 
-</tweet></div>
+    <router-outlet></router-outlet>
+ 
   </div >
+
+
+<!-- <tweet [content]="item" *ngFor="let item of tweets">
+</tweet></div> -->
+
+
   <div class="border-l">other stuff</div>
 
 
