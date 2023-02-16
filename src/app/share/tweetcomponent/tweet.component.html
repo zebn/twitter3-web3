@@ -1,9 +1,20 @@
 <div class="mb-4">
 
-    <div class="grid grid-cols-2">
-        <div>{{content.author}}</div>
-        <div>{{content.date | date: 'd MMM y'}}</div>
-    </div>
-    <h1>{{content.message}}</h1>
+
+    <a href="#" class="block border-b border-gray-200 dark:border-gray-600 w-full px-4 py-3 transition hover:bg-gray-100 dark:hover:bg-white/5">
+        <div class="flex space-x-2 py-2">
+            <div class="w-14 shrink-0">
+                <img class="w-12 h-12 rounded-full" src="https://pbs.twimg.com/profile_images/1481281375835725825/rZzCEFm3_400x400.jpg">
+            </div>
+            <div class="flex-grow">
+                <p class="text-gray-600 dark:text-gray-400 font-normal text-sm"><span class="font-bold text-black dark:text-white text-base">{{content.author}}</span> @shornuk &middot; {{content.date | date: 'd MMM y'}}</p>
+                <p class="text-[15px] dark:text-white">{{content.message}}</p>
+            </div>
+            <div class="shrink-0">
+                <svg viewBox="0 0 24 24" class="w-5 h-5 fill-current"><g><circle cx="5" cy="12" r="2"></circle><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle></g></svg>
+            </div>
+        </div>
+    </a>
+ 
 
 </div>
