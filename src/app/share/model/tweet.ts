@@ -9,7 +9,7 @@ export class Tweet {
     public replies?: Tweet[];
     public images?: string[];
 
-    constructor(date: Date, message: string, author: string, likes: number, retweets?: Tweet[], replies?: Tweet[], images?: string[]) {
+    constructor(date: Date, message: string, author: string, likes: number = 0, retweets?: Tweet[] , replies?: Tweet[], images?: string[]) {
 
         this.date = date;
         this.message = message;
