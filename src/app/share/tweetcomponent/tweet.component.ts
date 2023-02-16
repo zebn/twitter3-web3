@@ -1,4 +1,5 @@
 import { Component, Input } from "@angular/core";
+import { Tweet } from "../model/tweet";
 
 @Component({
 
@@ -9,7 +10,7 @@ import { Component, Input } from "@angular/core";
 
 export class TweetComponent {
 @Input()
-public content: any = null;
+public tweet: Tweet | null = null;
 
 
 constructor() {}

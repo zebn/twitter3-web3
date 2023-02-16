@@ -1,15 +1,16 @@
+import { User } from "./user";
 
 export class Tweet {
 
     public date: Date;
     public message: string;
-    public author: string;
+    public author: User;
     public likes: number;
     public retweets?: Tweet[];
     public replies?: Tweet[];
     public images?: string[];
 
-    constructor(date: Date, message: string, author: string, likes: number = 0, retweets?: Tweet[] , replies?: Tweet[], images?: string[]) {
+    constructor(date: Date, message: string, author: User, likes: number = 0, retweets?: Tweet[] , replies?: Tweet[], images?: string[]) {
 
         this.date = date;
         this.message = message;
